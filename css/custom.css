@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow-x: hidden;
@@ -60,6 +54,9 @@ hr.star-primary:after {
     top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 hr.star-light {
@@ -86,7 +83,7 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    background: #18BC9C;
+    background: #2196F3;
     color: white;
 }
 
@@ -110,6 +107,11 @@ header .intro-text .name {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 2em;
+}
+
+header .intro-icon {
+    font-size: 2em;
+    display: block;
 }
 
 header .intro-text .skills {
@@ -164,7 +166,7 @@ header .intro-text .skills {
 }
 
 .navbar-custom .navbar-nav li a:hover {
-    color: #18BC9C;
+    color: #2196F3;
     outline: none;
 }
 
@@ -175,14 +177,14 @@ header .intro-text .skills {
 
 .navbar-custom .navbar-nav li.active a {
     color: white;
-    background: #18BC9C;
+    background: #2196F3;
 }
 
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
     color: white;
-    background: #18BC9C;
+    background: #2196F3;
 }
 
 .navbar-custom .navbar-toggle {
@@ -193,9 +195,9 @@ header .intro-text .skills {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background-color: #18BC9C;
+    background-color: #2196F3;
     color: white;
-    border-color: #18BC9C;
+    border-color: #2196F3;
 }
 
 @media (min-width: 768px) {
@@ -229,7 +231,7 @@ section h2 {
 }
 
 section.success {
-    background: #18BC9C;
+    background: #2196F3;
     color: white;
 }
 
@@ -348,7 +350,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18BC9C;
+    color: #2196F3;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -390,7 +392,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    color: #18BC9C;
+    color: #2196F3;
     background: white;
     border: solid 2px white;
 }
@@ -444,8 +446,8 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-success {
     color: white;
-    background-color: #18BC9C;
-    border-color: #18BC9C;
+    background-color: #2196F3;
+    border-color: #2196F3;
     font-weight: 700;
 }
 
@@ -455,8 +457,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
     color: white;
-    background-color: #128f76;
-    border-color: #11866f;
+    background-color: #0D47A1;
+    border-color: #0D47A1;
 }
 
 .btn-success:active,
@@ -480,12 +482,12 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-    background-color: #18BC9C;
-    border-color: #18BC9C;
+    background-color: #2196F3;
+    border-color: #2196F3;
 }
 
 .btn-success .badge {
-    color: #18BC9C;
+    color: #2196F3;
     background-color: white;
 }
 
@@ -593,4 +595,57 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
     opacity: 0;
     display: none;
+}
+
+
+/* Animations*/
+
+.spin-right {
+    -webkit-animation: spin-right 5s linear infinite;
+    -moz-animation: spin-right 5s linear infinite;
+    animation: spin-right 5s linear infinite;
+}
+
+.spin-left {
+    -webkit-animation: spin-left 5s linear infinite;
+    -moz-animation: spin-left 5s linear infinite;
+    animation: spin-left 5s linear infinite;
+}
+
+@-moz-keyframes spin-right {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin-left {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin-left {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin-left {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
 }
