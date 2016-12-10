@@ -1,4 +1,7 @@
 "use strict";
+
+var animationStarted = false;
+
 jQuery(document).ready(function () {
 
     console.log("Hey, toch even naar de source code kijken?");
@@ -11,7 +14,8 @@ jQuery(document).ready(function () {
         var windowHeight = $(window).height();
         var currentPosition = $(this).scrollTop();
         
-        if (currentPosition > (skillsTop + skillsHeight - windowHeight)) {
+        if (currentPosition > (skillsTop + skillsHeight - windowHeight) && !animationStarted) {
+            animationStarted = true;
             animateSkills();
         }
     });
