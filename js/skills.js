@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
 
     $(window).scroll(function () {
         var skillsTop = $('#skills').offset().top;
-        var skillsHeight = $('#skills').outerHeight();
+        var skillsHeight = ($('#skills').outerHeight() / 2);
         var windowHeight = $(window).height();
         var currentPosition = $(this).scrollTop();
         
