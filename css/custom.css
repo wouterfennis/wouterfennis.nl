@@ -136,7 +136,7 @@ header .intro-text .skills {
 }
 
 .navbar-custom {
-    background: #2C3E50;
+    background: #01579B;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     border: none;
@@ -162,6 +162,9 @@ header .intro-text .skills {
 }
 
 .navbar-custom .navbar-nav li a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     color: white;
 }
 
