@@ -60,12 +60,12 @@
     -webkit-border-radius: 3px;
 }
 
-.skillbar .icon{
+.skillbar .icon {
     position: absolute;
     right: 10px;
 }
 
-.skillbar .fa{
+.skillbar .fa {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -80,4 +80,17 @@
     line-height: 35px;
     color: #ffffff;
     color: rgba(0, 0, 0, 0.4);
+}
+
+.skill-list {
+    margin-top: 10px;
+    color: #2196F3;
+}
+
+.skill-list .list-group-item {
+    background-color: #eee;
+}
+
+.skill-list .skill-name {
+    display: none;
 }
