@@ -672,9 +672,9 @@ fieldset[disabled] .btn-success.active {
 /* Waving */
 
 .waving {
-    -webkit-animation: waving 5s linear infinite;
-    -moz-animation: waving 5s linear infinite;
-    animation: waving 5s linear infinite;
+    -webkit-animation: waving 4s linear infinite;
+    -moz-animation: waving 4s linear infinite;
+    animation: waving 4s linear infinite;
 }
 
 @-moz-keyframes waving {
