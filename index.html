@@ -6,26 +6,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="De website over Wouter Fennis, Software Developer">
+    <meta name="description" content="De website over Wouter Fennis, Software Developer. Op deze website stel ik mijzelf voor en kunt u inzicht krijgen in mijn projecten">
+    <meta name="keywords" content="wouter fennis, software, developer, programmeur, informatica, hogeschool utrecht">
     <meta name="author" content="Wouter Fennis">
+    <link rel="canonical" href="http://wouterfennis.nl/" />
 
     <title>Wouter Fennis - Software Developer</title>
 
     <!-- Bootstrap -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/skills.css" rel="stylesheet">
+    
+    <!-- Custom --> 
+    <link href="css/custom.min.css" rel="stylesheet">
+    <link href="css/skills.min.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="lib/ionicons/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/img/favicon.ico">
 
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js/skills.js" async></script>
+    <script src="js/skills.min.js" async></script>
 
 </head>
 
@@ -39,23 +43,23 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Wouter Fennis</a>
+                <a class="navbar-brand" href="#page-top" title="WouterFennis.nl">Wouter Fennis</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#page-top" title="Terug naar boven"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Over mij</a>
+                        <a href="#about" title="Over mij">Over mij</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#skills">Skills</a>
+                        <a href="#skills" title="Skills">Skills</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Mijn "Side Projects"</a>
+                        <a href="#portfolio" title="Mijn Side Projects">Mijn "Side Projects"</a>
                     </li>
                 </ul>
             </div>
@@ -69,10 +73,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="Wouter Fennis">
+                    <img class="img-responsive" src="img/profile.png" alt="Wouter Fennis Profiel" title="Wouter Fennis Profiel">
                     <div class="intro-text">
                         <span class="intro">Hallo, ik ben</span>
-                        <span class="name">Wouter Fennis</span>
+                        <h1 class="name">Wouter Fennis</h1>
                         <!--<hr class="star-light">-->
                         <span class="intro-icon">
                             <i class="fa fa-cog spin-right"></i>
@@ -97,7 +101,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 col-xs-12">
-                    <img src="img/wouter.jpg" class="img-responsive img-rounded img-centered" alt="Wouter Fennis">
+                    <img src="img/wouter.jpg" class="img-responsive img-rounded img-centered" alt="Wouter Fennis aan het werk" title="Wouter Fennis aan het werk">
                 </div>
                 <div class="col-lg-8 col-sm-6 col-xs-12">
                     <hr class="visisble-sm visible-xs">
@@ -135,63 +139,57 @@
             </div>
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <div class="skillbar clearfix " data-percent="95%">
-                        <div class="skillbar-title" style="background: #FFC400;"><span>HTML5 <i class="icon ion-social-html5"></i></span></div>
-                        <div class="skillbar-bar" style="background: #FFEA00;"></div>
+                    <div class="skillbar clearfix skill-html" data-percent="95%">
+                        <div class="skillbar-title"><span>HTML5 <i class="icon ion-social-html5"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">95%</div>
                     </div>
 
-
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #2980b9;"><span>CSS3 <i class="icon ion-social-css3"></i></span></div>
-                        <div class="skillbar-bar" style="background: #2980b9;"></div>
+                    <div class="skillbar clearfix skill-css" data-percent="80%">
+                        <div class="skillbar-title"><span>CSS3 <i class="icon ion-social-css3"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">80%</div>
                     </div>
 
-
-                    <div class="skillbar clearfix " data-percent="68%">
-                        <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery <i class="icon ion-code"></i></span></div>
-                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                    <div class="skillbar clearfix skill-jquery" data-percent="68%">
+                        <div class="skillbar-title"><span>jQuery <i class="icon ion-code"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">60%</div>
                     </div>
 
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #DD2C00;"><span>AngularJS <i class="icon ion-social-angular"></i></span></div>
-                        <div class="skillbar-bar" style="background: #FF3D00;"></div>
+                    <div class="skillbar clearfix skill-angular" data-percent="70%">
+                        <div class="skillbar-title"><span>AngularJS <i class="icon ion-social-angular"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">65%</div>
                     </div>
 
-
-                    <div class="skillbar clearfix " data-percent="65%">
-                        <div class="skillbar-title" style="background: #46465e;"><span>PHP <i class="icon ion-code"></i></span></div>
-                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                    <div class="skillbar clearfix skill-php" data-percent="65%">
+                        <div class="skillbar-title"><span>PHP <i class="icon ion-code"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">63%</div>
                     </div>
 
-                    <div class="skillbar clearfix " data-percent="60%">
-                        <div class="skillbar-title" style="background: #7A1EA1;"><span>Smarty <i class="icon ion-code"></i></span></div>
-                        <div class="skillbar-bar" style="background: #9B26AF;"></div>
+                    <div class="skillbar clearfix skill-smarty" data-percent="60%">
+                        <div class="skillbar-title"><span>Smarty <i class="icon ion-code"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">50%</div>
                     </div>
 
-
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #d35400;"><span>Java <i class="icon ion-code"></i></span></div>
-                        <div class="skillbar-bar" style="background: #e67e22;"></div>
+                    <div class="skillbar clearfix skill-java" data-percent="75%">
+                        <div class="skillbar-title"><span>Java <i class="icon ion-code"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">75%</div>
                     </div>
 
-
-                    <div class="skillbar clearfix " data-percent="60%">
-                        <div class="skillbar-title" style="background: #27ae60;"><span>C# <i class="icon ion-code"></i></span></div>
-                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                    <div class="skillbar clearfix skill-csharp" data-percent="60%">
+                        <div class="skillbar-title"><span>C# <i class="icon ion-code"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">60%</div>
                     </div>
 
-
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #124e8c;"><span>SQL <i class="fa fa-database"></i></span></div>
-                        <div class="skillbar-bar" style="background: #4288d0;"></div>
+                    <div class="skillbar clearfix skill-sql" data-percent="75%">
+                        <div class="skillbar-title"><span>SQL <i class="fa fa-database"></i></span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">75%</div>
                     </div>
                 </div>
@@ -222,41 +220,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Mijn "Side Projects" <img src="img/icons/hammer.png" class="hammertime" width="50" height="50" alt="Hammer"></h2>
+                    <h2>Mijn "Side Projects" <img src="img/icons/hammer.png" class="hammertime" width="50" height="50" alt="Hammer" title="Hammer"></h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item text-center">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" title="Smartphone Comparer">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/comparer.png" class="img-responsive" alt="">
+                        <img src="img/projects/comparer.png" class="img-responsive" alt="Smartphone Comparer" title="Smartphone Comparer">
                     </a>
                     <h3>Smartphone Comparer</h3>
                 </div>
                 <div class="col-sm-4 portfolio-item text-center">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal" title="Roman Numeral Converter">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/roman.png" class="img-responsive" alt="">
+                        <img src="img/projects/roman.png" class="img-responsive" alt="Roman Numeral Converter" title="Roman Numeral Converter">
                     </a>
                     <h3>Roman Numeral Converter</h3>
                 </div>
                 <div class="col-sm-4 portfolio-item text-center">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal" title="Letter Dictionary">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/letterdictionary.png" class="img-responsive" alt="">
+                        <img src="img/projects/letterdictionary.png" class="img-responsive" alt="Letter Dictionary" title="Letter Dictionary">
                     </a>
                     <h3>Letter Dictionary</h3>
                 </div>
@@ -291,13 +289,18 @@
                         Copyright &copy; 2016 - <a href="http://www.wouterfennis.nl" title="WouterFennis.nl">WouterFennis.nl</a> - Gemaakt door: Wouter Fennis
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="/sitemap.xml" title="Sitemap">Sitemap</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
+        <a class="btn btn-primary" href="#page-top" title="Terug naar boven">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
@@ -352,7 +355,7 @@
                             <p>Omdat ik de applicatie eventueel op zowel iOS als Android zou willen uitrollen had ik gekozen om het een Cordova/Phonegap applicatie te maken. De logica zou in AngularJS worden geschreven en de front-end zou met HTML5 en CSS3 gemaakt worden. </p>
                             <p>Uiteindelijk heb ik er voor gekozen om de applicatie meer richting het "Leren van het romeinse getallenstelsel" te laten gaan. Waarbij je een willekeurig berekend romeins cijfer te zien krijgt en het antwoord moet invullen. Maar ook de andere kant op zodat je bij een decimaal getal romeinse cijfers moet combineren.</p>
                             <p>
-                                <a href="https://github.com/wouterfennis/learnRomanNumerals" class="btn-social-reverse" target="_blank" title="Roman Numeral Converter">
+                                <a href="https://github.com/wouterfennis/learnRomanNumerals" class="btn-social-reverse" target="_blank" title="Roman Numeral Converter Repository">
                                     <i class="fa fa-fw fa-github"></i>
                                 </a>
                             </p>
@@ -382,7 +385,7 @@
                             <p>Met de referentietabel in gedachten gaat de applicatie een willekeurige tekst lezen en geeft per regel aan hoe groot de kans is dat dit Engels is.</p>
                             <p>Je kan elk soort referentie tekst meegeven en je bent dus niet gebonden aan een taal. Deze applicatie is gemaakt met Hadoop</p>
                             <p>
-                                <a href="https://github.com/wouterfennis/LetterDictionary" class="btn-social-reverse" target="_blank" title="Letter Dictionary"><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/wouterfennis/LetterDictionary" class="btn-social-reverse" target="_blank" title="Letter Dictionary Repository"><i class="fa fa-fw fa-github"></i></a>
                             </p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Sluiten</button>
                         </div>
@@ -420,6 +423,7 @@
 
         ga('create', 'UA-88763548-1', 'auto');
         ga('send', 'pageview');
+
     </script>
 
 </body>
