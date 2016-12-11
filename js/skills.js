@@ -13,7 +13,7 @@ jQuery(document).ready(function () {
         var skillsHeight = ($('#skills').outerHeight() / 2);
         var windowHeight = $(window).height();
         var currentPosition = $(this).scrollTop();
-        
+
         if (currentPosition > (skillsTop + skillsHeight - windowHeight) && !animationStarted) {
             animationStarted = true;
             animateSkills();
@@ -27,5 +27,8 @@ function animateSkills() {
         jQuery(this).find('.skillbar-bar').animate({
             width: jQuery(this).attr('data-percent')
         }, 6000);
+    });
+    jQuery('.skill-list').each(function () {
+        jQuery(this).find('.skill-name').fadeIn(3000);
     });
 }
