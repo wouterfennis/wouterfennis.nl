@@ -7,7 +7,6 @@ jQuery(document).ready(function () {
     console.log("Hey, toch even naar de source code kijken?");
     console.log("Kijk anders op mijn GitHub dat leest een stuk prettiger!");
     console.log("https://github.com/wouterfennis/wouterfennis.nl");
-    console.log("Daar vindt je ook mijn andere projecten");
 
     $(window).scroll(function () {
         var skillsTop = $('#skills').offset().top;
